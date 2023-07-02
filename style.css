@@ -1,0 +1,257 @@
+body {
+	background-color: plum;
+}
+
+header {
+	background-color: #e8e8e8;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 5px #888888;
+	padding-bottom: 30px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: gray;
+}
+
+#logo {
+	margin-bottom: 50px;
+}
+
+.nav_menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav_menu li {
+	min-width: 8em;
+	float: left;
+	margin-right: 0.5em;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.nav_menu li a:link,
+.nav_menu li a:visited {
+	background-color: aqua;
+	display: block;
+	padding: 0.2em;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 0 0.2em 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+}
+
+.nav_menu li a:hover {
+	background-color: aquamarine;
+	/*-webkit-transform: scale(2,2);
+	-ms-transform: scale(2,2);
+	transform: scale(2,2);*/
+
+	animation: myRotate 3s infinite;
+	-webkit-animation: myRotate 3s infinite;
+	-moz-animation: myRotate 3s infinite;
+}
+
+.nav_menu a {
+	display: block;
+	width: 80px;
+ }
+
+.clear {
+	clear: both;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 30px;
+	float: left;
+	border: 1px solid #333;
+	background: #e8e8e8;
+}
+
+#mainBody{
+	background-color: purple
+}
+
+#welcomeDiv{
+	background-color: #e8e8e8;
+	float: left;
+	width: 70%;
+	margin-right: 20px;
+	padding:15px;
+	margin-left: 10px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#newsletter{
+	background-color: #e8e8e8;
+	float: left;
+	padding: 15px;
+	width: 20%;
+	margin-bottom: 50px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#leftDiv{
+	background-color: #e8e8e8;
+	float: left;
+	width: 60%;
+	height: 200px
+	padding: 10px;
+	margin: 20px;
+	box-shadow: 15px 15px 15px #888888;
+}
+
+#leftDiv img{
+	max-height: 100px
+	max-width: 100px;
+}
+
+#secondeleftDiv{
+	background-color: #e8e8e8;
+	float: left;
+	width: 60;
+	height: 200px;
+    padding: 10px;
+	margin: 20px;
+	box-shadow: 15px 15px 15px #888888;
+}
+
+#rigthDiv img{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+footer {
+	height: 50px;
+	background-color: black;
+	color: white;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+/*Animation Elements*/
+@keyframes fadeIn {from{ opacity: 0;} to {opacity: 1;} }
+@-webkit-keyframes fadeIn {from{ opacity: 0;} to {opacity: 1;} }
+@-moz-keyframes fadeIn {from{ opacity: 0;} to {opacity: 1;} }
+
+
+.fade-in {
+	opacity: 0;
+
+	animation: fadeIn ease-in 1;
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+}
+
+@keyframes fadeOut {from{ opacity: 1;} to {opacity: 0;} }
+@-webkit-keyframes fadeOut {from{ opacity: 1;} to {opacity: 0;} }
+@-moz-keyframes fadeOut {from{ opacity: 1;} to {opacity: 0;} }
+
+.fade-out {
+	opacity: 1;
+
+	animation: fadeOut ease-in 1;
+	-webkit-animation: fadeOut ease-in 1;
+	-moz-animation: fadeOut ease-in 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+}
+
+.myFadeOut:hover {
+    opacity: 1;
+
+	animation: fadeOut ease-in 1;
+	-webkit-animation: fadeOut ease-in 1;
+	-moz-animation: fadeOut ease-in 1;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+}
+
+/*rotate*/
+@keyframes myRotate{
+	0% {transform: rotate(0deg); }
+	25% {transform: rotate(90deg); }
+	50% {transform: rotate(180deg); }
+	75% {transform: rotate(275deg);}
+	100%{transform: rotate(360deg);}
+}
+
+@-webkit-keyframes myRotate{
+	0% {transform: rotate(0deg); }
+	25% {transform: rotate(90deg); }
+	50% {transform: rotate(180deg); }
+	75% {transform: rotate(275deg);}
+	100%{transform: rotate(360deg);}
+}
+
+@-moz-keyframes myRotate{
+	0% {transform: rotate(0deg); }
+	25% {transform: rotate(90deg); }
+	50% {transform: rotate(180deg); }
+	75% {transform: rotate(275deg);}
+	100%{transform: rotate(360deg);}
+}
+
+/*Move*/
+@keyframes myMove{
+	0% {left: 0px;}
+	25% {left: 25px;}
+	50% {left: 45px;}
+	75% {left: 22px;}
+	100%{left: 0px}
+}
+
+@-webkit-keyframes myMove{
+	0% {left: 0px;}
+	25% {left: 25px;}
+	50% {left: 45px;}
+	75% {left: 22px;}
+	100%{left: 0px}
+}
+
+@-moz-keyframes myMove{
+	0% {left: 0px;}
+	25% {left: 25px;}
+	50% {left: 45px;}
+	75% {left: 22px;}
+	100%{left: 0px}
+}
+
+#welcomeDiv h2{
+	position: relative;
+
+	animation: myMove 5s infinite;
+	-webkit-animation: myMove 5s infinite;
+	-moz-animation: myMove 5s infinite;
+}
